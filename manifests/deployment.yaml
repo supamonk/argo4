@@ -4,8 +4,9 @@ metadata:
   name: hello-world
   labels:
     app: hello-world
+    org: orange
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: hello-world
