@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: brave-world
   labels:
-    app: hello-world
+    app: brave-world
     org: orange
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: hello-world
+      app: brave-world
   template:
     metadata:
       labels:
-        app: hello-world
+        app: brave-world
     spec:
       containers:
-      - name: hello-world
-        image: ashu9/hello-world:latest
+      - name: brave-world
+        image: supamonk/brave-world:latest
         ports:
         - containerPort: 5000
