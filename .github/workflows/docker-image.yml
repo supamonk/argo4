@@ -27,9 +27,9 @@ jobs:
       # Build the Docker Image
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-world:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/brave-world:latest .
 
       # Push the Image to Docker Hub
       - name: Push Docker Image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/hello-world:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/brave-world:latest
